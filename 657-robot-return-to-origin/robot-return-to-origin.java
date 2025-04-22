@@ -1,9 +1,10 @@
 class Solution {
     public boolean judgeCircle(String moves) {
-        var x = 0;
-        var y = 0;
-        var arr = moves.toCharArray();
-        for(var c : arr){
+        int x = 0;
+        int y = 0;
+        int len = moves.length();
+        for(int i = 0;i<len;i++){
+            char c = moves.charAt(i);
             if(c == 'U'){
                 y+=1;
             }
