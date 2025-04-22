@@ -15,12 +15,8 @@ class Solution {
 		}
 		if (carry == 1) {
 			var arr = new int[digits.length + 1];
-			arr[0] = 1;
-			for (int i = 1; i <= digits.length; i++) {
-				arr[i] = digits[i - 1];
-			}
-			return arr;
-		}
+            arr[0] = 1;
+            return arr;		}
 		return digits;
 	}
 }
